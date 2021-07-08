@@ -9,10 +9,10 @@ namespace APIWeb.Helpers
         public DbSet<Categoria> Categorias { get; set; } // tabla categoria la base de datos
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string Conexion = @"Server = surtidor.database.windows.net;
-                                Database = surtidordb;
-                                User = admindb;
-                                Password = 12AB34cd*;";
+            string Conexion = @"Server = sqlserverontiveros.database.windows.net;
+                                Database = db1;
+                                User = sqluser;
+                                Password = Pa$$w0rd1234;";
             optionsBuilder.UseSqlServer(Conexion);
         }
     }
